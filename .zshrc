@@ -70,13 +70,27 @@ ZSH_THEME="passion"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  history-substring-search
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+  git
+  python
+# dogesay
+  reminder
+# extract
+# taskwarrior
+  sudo
+  common-aliases
+)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+# export PATH=&#34;$HOME/Android/tools:$PATH&#34;
+# export PATH=&#34;$HOME/Android/platform-tools:$PATH&#34;
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -99,3 +113,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# zgen load zsh-users/zsh-syntax-highlighting
+
+# source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
