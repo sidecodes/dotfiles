@@ -76,6 +76,7 @@ plugins=(
   zsh-autosuggestions
   git
   python
+  fasd
 # dogesay
   reminder
 # extract
@@ -91,6 +92,10 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 # export PATH=&#34;$HOME/Android/tools:$PATH&#34;
 # export PATH=&#34;$HOME/Android/platform-tools:$PATH&#34;
+export PATH=$PATH:/usr/local/go/bin
+export NVM_DIR="$HOME/.nvm"
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -99,7 +104,7 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='mvim'export PATH=$PATH:/home/bfloat16/.fly/bin/flyctl
 # fi
 
 # Compilation flags
@@ -117,3 +122,19 @@ source $ZSH/oh-my-zsh.sh
 # zgen load zsh-users/zsh-syntax-highlighting
 
 # source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/bfloat16/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/bfloat16/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/bfloat16/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/bfloat16/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
