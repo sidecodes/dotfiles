@@ -94,6 +94,9 @@ source $ZSH/oh-my-zsh.sh
 # export PATH=&#34;$HOME/Android/platform-tools:$PATH&#34;
 export PATH=$PATH:/usr/local/go/bin
 export NVM_DIR="$HOME/.nvm"
+export FLYCTL_INSTALL="/home/bfloat16/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+export JAVA_HOME="/usr/lib/jvm/jdk-17/"
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
@@ -104,7 +107,7 @@ export NVM_DIR="$HOME/.nvm"
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'export PATH=$PATH:/home/bfloat16/.fly/bin/flyctl
+#   export EDITOR='mvim'
 # fi
 
 # Compilation flags
@@ -138,3 +141,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
