@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="passion"
+ZSH_THEME="edvardm"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -78,7 +78,7 @@ plugins=(
   python
   fasd
 # dogesay
-  reminder
+# reminder
 # extract
 # taskwarrior
   sudo
@@ -90,6 +90,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+<<<<<<< HEAD
 # export PATH=&#34;$HOME/Android/tools:$PATH&#34;
 # export PATH=&#34;$HOME/Android/platform-tools:$PATH&#34;
 export PATH=$PATH:/usr/local/go/bin
@@ -100,6 +101,12 @@ export JAVA_HOME="/usr/lib/jvm/jdk-17/"
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
+=======
+export PATH=$PATH:/usr/local/go/bin
+export EDITOR="code -w"
+export PATH=$PATH:/home/bfloat16/go/bin/gojsontoyaml
+export PATH=$PATH:/home/bfloat16/go/bin
+>>>>>>> e2b71a9 (update .zshrc)
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -121,6 +128,7 @@ export JAVA_HOME="/usr/lib/jvm/jdk-17/"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+<<<<<<< HEAD
 
 # zgen load zsh-users/zsh-syntax-highlighting
 
@@ -143,3 +151,7 @@ unset __conda_setup
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+=======
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
+>>>>>>> e2b71a9 (update .zshrc)
